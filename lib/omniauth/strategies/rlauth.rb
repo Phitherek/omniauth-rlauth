@@ -7,12 +7,12 @@ module OmniAuth
 
             option :client_options, {:site => "https://rlauth.deira.phitherek.me"}
 
-            uid { raw_info['id'] }
+            uid { raw_info['user']['id'] }
 
             info do
                 {
-                    :callsign => raw_info['callsign'],
-                    :email => raw_info['email']
+                    :callsign => raw_info['user']['callsign'],
+                    :email => raw_info['user']['email']
                 }
             end
 
