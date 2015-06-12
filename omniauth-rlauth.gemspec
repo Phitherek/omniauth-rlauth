@@ -9,9 +9,10 @@ Gem::Specification.new do |s|
     s.summary = 'An OmniAuth OAuth2 strategy for RLAuth'
     s.description = s.summary
     s.homepage = 'https://github.com/Phitherek/omniauth-rlauth'
+    s.licenses =  ['MIT']
 
     s.files = `git ls-files`.split("\n")
     s.require_paths = ['lib']
 
-    s.add_runtime_dependency 'omniauth-oauth2', '~> 1.3.0'
+    s.add_runtime_dependency 'omniauth-oauth2', '~> 1.3'
 end
