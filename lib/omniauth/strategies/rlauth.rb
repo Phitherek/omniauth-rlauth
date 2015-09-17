@@ -5,7 +5,7 @@ module OmniAuth
         class RLAuth < OmniAuth::Strategies::OAuth2
             option :name, "rlauth"
 
-            option :client_options, {:site => "https://rlauth.deira.phitherek.me"}
+            option :client_options, {:site => "https://rlauth.phitherek.me"}
 
             uid { raw_info['user']['id'] }
 
